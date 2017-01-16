@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="150dp"
+    android:background="#ffffff"
+    android:weightSum="1"
+    android:layout_height="190dp">
+
+    <TextView
+        android:text="Navn"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/highScoreName"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Navn"
+        android:ems="10"
+        android:id="@+id/highScoreAddName"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Gem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/highScoreSave"
+            android:backgroundTint="@color/actionbarRed"
+            android:layout_marginTop="35dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="chancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/highScoreDontSave"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_marginTop="35dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
